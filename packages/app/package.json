@@ -1,0 +1,19 @@
+{
+  "name": "@monorepo/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.jsx",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack/config.prod.js",
+    "build:analyze": "webpack --config webpack/config.prod.analyze.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --config webpack/config.dev.js",
+    "lint:js": "eslint --ext .js,.jsx ./src webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@monorepo/uikit": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
